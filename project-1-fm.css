@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&family=Work+Sans:wght@300&display=swap');
+html{
+    font-size: 62.5%
+}
+:root{
+ --bg-primary: hsl(209, 98%, 65%);
+ --bg-secondary: hsl(0,0%,100%);
+ --ftn-color-pry: hsl(220, 15%, 55%);
+ --ftn-color-header:  hsl(218, 44%, 22%);
+
+ --ftn-size: 2.53rem;
+ --ftn-family:'Outfit', sans-serif; 
+ --fw-header: 700;
+ --fw-pry: 400;
+}
+*{
+    box-sizing: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    background-color:var(--bg-primary) ;
+    font-family: var(--ftn-family);
+}
+
+img{
+    max-width: 100%;
+   
+}
+h1{
+    max-width: 28ch;
+margin-inline: auto;
+font-size: var(--ftn-size);
+font-weight: var(--fw-header);
+color: var(--ftn-color-header);
+}
+p{
+    max-width: 34ch;
+    font-size: var(--ftn-para,1.5rem);
+    font-weight: var(--fw-pry);
+    color: var(--ftn-color-pry);
+    margin-inline: auto;
+}
+/* media Queries */
+@media (max-width: 30rem) {
+    [data-attribute="container"]{
+        margin-inline: auto;
+        margin-top: 2em;
+        max-width: 30rem;
+        padding: 2em;
+        background-color: var(--bg-secondary);
+        border-radius: 2rem;
+        text-align: center;
+    } 
+    h1{
+      max-width: 25ch ;
+      font-size: 2rem;
+      font-weight: 900;
+    }
+    p{
+        max-width: 28ch;
+        font-size: 1.4rem;
+    }
+}
+@media (min-width: 60em) {
+    [data-attribute="container"]{
+        margin-inline: auto;
+        margin-top: 2em;
+        max-width: 30rem;
+        padding: 2em;
+        background-color: var(--bg-secondary);
+        border-radius: 2rem;
+        text-align: center;
+    }
+}
